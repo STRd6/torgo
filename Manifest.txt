@@ -1,0 +1,8 @@
+COPYING.txt
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/torgo
+lib/torgo.rb
+test/test_torgo.rb

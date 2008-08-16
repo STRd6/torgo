@@ -1,0 +1,8 @@
+=== 0.0.1 / 2008-08-15
+
+* Basic downloading functionality
+
+  * Hard coded integration with uTorrent only
+  * Windows and Linux compatable
+  * Don't know about bin/torgo yet...
+
