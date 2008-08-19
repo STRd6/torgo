@@ -122,14 +122,18 @@ class Torgo
   def run_utor(title)
     command = "#{UTOR_PATH} \"#{TOR_DIR}#{title}\""
     puts command
-    #`#{command}`
+    `#{command}`
+  end
+  
+  def self.run
+    torgo = Torgo.new
+    title = torgo.get_search_results ARGV.join(' ')
+    torgo.run_utor(title)
   end
 end
 
 #get_tor_from_page 'http://www.torrentz.com/b212d595df25d950d9b007619ccd134e1ad49cfa'
 
 if $PROGRAM_NAME == __FILE__
-  torgo = Torgo.new
-  title = torgo.get_search_results ARGV.join(' ')
-  torgo.run_utor(title)
+  Torgo.run
 end
